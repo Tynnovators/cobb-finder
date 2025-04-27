@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CobbFinder</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="CobbFinder" name="keywords">
+  <meta content="CobbFinder" name="description">
+
+  <!-- Favicons -->
+  <link href="/static/img/scoliosis-logo.jpg" rel="icon">
+  <link href="/static/img/scoliosis-logo.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="/static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/static/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="/static/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="/static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="/static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Author: Raj Rajhans
+    Author Link: rajrajhans.com
+  ======================================================= -->
+</head>
+
+<body>
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <h3 class="text-light"><a href="#intro" class="scrollto"><span>CobbFinder</span></a></h3>
+        <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#intro">Home</a></li>
+          <li><a href="#about">The Idea</a></li>
+          <li><a href="#services">How It Works</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#call-to-action">Try It Out</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col-md-6 intro-info order-md-first order-last">
+          <h2><span>Cobb</span>Finder</h2>
+          <h5>A Proof of Concept for Vertebral Column Centerline <br>& Cobb Angles Detection using OpenCV</h5><br><br>
+          <div>
+            <a href="/demo" class="btn-get-started scrollto">Try It Out</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 intro-img order-md-last order-first" style="text-align: center;">
+          <img src="/static/img/intro-img.svg" alt="" class="img-fluid" style="max-width: 50%;">
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 col-md-6">
+            <div class="about-img">
+              <img src="/static/img/scoliosis.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-6">
+            <div class="about-content">
+              <h2>The Idea</h2>
+              <h5>What is the problem we are trying to solve?</h5>
+              <p><strong>Scoliosis</strong> is a disorder that causes an abnormal curve of the spine. Depending on the severity of the curve and the risk for it getting worse, scoliosis can be treated with observation, bracing, or surgery. Doctors make the decision of whether to perform surgery or not by calculation of <strong>Cobb Angle</strong>.</p>
+              <p>The Cobb angle is the most widely used measurement to quantify the magnitude of spinal deformities, like in the case of scoliosis, on plain radiographs. Conventionally, the measurement of Cobb Angle is done <strong>manually</strong> by drawing of lines along the endplates in the X Ray, finding their intersection, and using an angle tool to measure the angle between the endplates, which is essentially the Cobb Angle.</p>
+              <p>In this project, we are trying to <strong>automate the calculation of the Cobb Angle</strong> from a given Ground Truth Image.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- #about -->
+
+
+    <!--==========================
+      How It Works Section
+    ============================-->
+    <section id="services" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>How It Works</h3>
+          <p>The technologies we have used to make this possible</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #fceef3;">
+                <p style="color: #ff689b;font-size: 25px;">1</p>
+              </div>
+              <h4 class="title"><a href="">OpenCV</a></h4>
+              <p class="description" style="text-align: center;">OpenCV was used for Image Analysis of the ground truth images</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #fff0da;">
+                <p style="color: #e98e06;font-size: 25px;">2</p>
+              </div>
+              <h4 class="title"><a href="">Flask</a></h4>
+              <p class="description" style="text-align: center;">The Flask Microframework was used for development of web application.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #e6fdfc;">
+                <p style="color: #3fcdc7;font-size: 25px;">3</p>
+              </div>
+              <h4 class="title"><a href="">Heroku</a></h4>
+              <p class="description" style="text-align: center;">We used Heroku to for hosting the web application</p>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Frequently Asked Questions Section
+    ============================-->
+    <section id="faq">
+      <div class="container">
+        <header class="section-header">
+          <h3>Frequently Asked Questions</h3>
+        </header>
+
+        <ul id="faq-list" class="wow fadeInUp">
+          <li>
+            <a data-toggle="collapse" class="collapsed" href="#faq1">What is Scoliosis? <i class="ion-android-remove"></i></a>
+            <div id="faq1" class="collapse" data-parent="#faq-list">
+              <p>
+                Scoliosis is a disorder that causes an abnormal curve of the spine. It is a sideways curvature of the spine that occurs most often during the growth spurt just before puberty.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">What is the "Cobb Angle"?<i class="ion-android-remove"></i></a>
+            <div id="faq2" class="collapse" data-parent="#faq-list">
+              <p>
+                The Cobb angle is the most widely used measurement to quantify the magnitude of spinal deformities, like in the case of scoliosis, on plain radiographs. Conventionally, the measurement of Cobb Angle is done manually by drawing of lines along the endplates in the X Ray, finding their intersection, and using an angle tool to measure the angle between the endplates, which is essentially the Cobb Angle.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq3" class="collapsed">What is a "Ground Truth Image"? <i class="ion-android-remove"></i></a>
+            <div id="faq3" class="collapse" data-parent="#faq-list">
+              <p>
+                Ground truth is a common terminology that is widely used in various fields to basically refer to any kind of information provided by direct observation.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq4" class="collapsed">What process is followed to detect the Cobb Angle from the Ground Truth Image? <i
+                    class="ion-android-remove"></i></a>
+            <div id="faq4" class="collapse" data-parent="#faq-list">
+              <p>
+                CobbFinder uses Computer Vision Technology to calculate Cobb Angles from Ground Truth Image. The ground truth image uploaded by the user is generally colored, so we first convert it to a greyscale image. Then, we perform thresholding, which is a type of image segmentation, to convert the image from a greyscale one to binary image. After this, edge detection is performed using the Canny Edge Filter (since we need edges to find the center line). Once that is done, we perform contour detection to get the contours by averaging the x co ordinates of the points having the same y co ordinates. Lastly, there is a need to perform smoothing, because contours are detected in groups, and the center line that we extract by contour detection is a bit thicker. At this point, we are able to detect the center line. We can then find the Cobb Angles from this center line by calculating perpendicular slopes on the smoothened centerline we just obtained.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- #faq -->
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Try It Out</h3>
+            <p class="cta-text">See the demo in action!</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="/demo" target="_blank">Click Here</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer" class="section-bg">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright 2021. All Rights Reserved
+      </div>
+      <div class="credits">
+
+        A Project by Prathmesh Choudhari & Raj Rajhans
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="/static/lib/jquery/jquery.min.js"></script>
+  <script src="/static/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="/static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/lib/easing/easing.min.js"></script>
+  <script src="/static/lib/mobile-nav/mobile-nav.js"></script>
+  <script src="/static/lib/wow/wow.min.js"></script>
+  <script src="/static/lib/waypoints/waypoints.min.js"></script>
+  <script src="/static/lib/counterup/counterup.min.js"></script>
+  <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="/static/lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="/static/lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="/static/contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="/static/js/main.js"></script>
+
+</body>
+</html>

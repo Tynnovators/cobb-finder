@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CobbFinder</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="CobbFinder" name="keywords">
+  <meta content="CobbFinder" name="description">
+
+  <!-- Favicons -->
+  <link href="/static/img/scoliosis-logo.jpg" rel="icon">
+  <link href="/static/img/scoliosis-logo.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="/static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/static/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="/static/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="/static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="/static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Author: Raj Rajhans
+    Author Link: rajrajhans.com
+  ======================================================= -->
+</head>
+
+<body>
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <h3 class="text-light"><a href="/#intro" class="scrollto"><span>CobbFinder</span></a></h3>
+        <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li><a href="/#intro">Home</a></li>
+          <li><a href="/#about">The Idea</a></li>
+          <li><a href="/#services">How It Works</a></li>
+          <li><a href="/#faq">FAQs</a></li>
+          <li class="active"><a href="/#call-to-action">Try It Out</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center" style="margin: auto;width: 90%;">
+        <div class="col-md-12" style="text-align: center">
+          <div class="inputBox" style="width: 90%;margin: auto;background: white;">
+            <h5>Results</h5>
+            <div style="margin: auto; text-align: center; margin-bottom:15px"><strong>Cobb Angles - </strong></div>
+
+            <table class="table table-bordered table-hover" style="max-width: 300px; margin: auto;">
+              <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Angle</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>47.129°</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>17.108°</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>39.521°</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+  <section>
+    <div class="inputBox" style="width: 90%;margin: auto;background: white; margin-top: 20px; text-align: center">
+      <h5>Steps</h5>
+
+      <p class="stepsImgDesc">Step 0: The Ground Truth Image:</p>
+      <img class="stepsImgs" src="/static/img/0.png" alt="">
+
+      <p class="stepsImgDesc">Step 1: Converting it to Greyscale:</p>
+      <img class="stepsImgs" src="/static/img/1.png" alt="">
+
+      <p class="stepsImgDesc">Step 2: Performing Thresholding on the Greyscale Image:</p>
+      <img class="stepsImgs" src="/static/img/2.png" alt="">
+
+      <p class="stepsImgDesc">Step 3: Using Canny Edge Filter for detecting edges:</p>
+      <img class="stepsImgs" src="/static/img/3.png" alt="">
+
+      <p class="stepsImgDesc">Step 4: Performing Contour Detection:</p>
+      <img class="stepsImgs" src="/static/img/4.png" alt="">
+
+      <p class="stepsImgDesc">Step 5: Performing Smoothing and Calculating Cobb Angles:</p>
+      <img class="stepsImgs" src="/static/img/5.png" alt="">
+      <p>Calculating Cobb Angles : 47.12900750068814, 17.108029435246785, 39.52170607808989</p>
+
+
+    </div>
+  </section>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer" class="section-bg">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright 2021. All Rights Reserved
+      </div>
+      <div class="credits">
+
+        A Project by Prathmesh Choudhari & Raj Rajhans
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="/static/lib/jquery/jquery.min.js"></script>
+  <script src="/static/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="/static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/lib/easing/easing.min.js"></script>
+  <script src="/static/lib/mobile-nav/mobile-nav.js"></script>
+  <script src="/static/lib/wow/wow.min.js"></script>
+  <script src="/static/lib/waypoints/waypoints.min.js"></script>
+  <script src="/static/lib/counterup/counterup.min.js"></script>
+  <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="/static/lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="/static/lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="/static/contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="/static/js/main.js"></script>
+
+</body>
+</html>
